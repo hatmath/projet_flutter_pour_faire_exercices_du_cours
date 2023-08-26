@@ -1,16 +1,21 @@
-# projet_flutter_pour_faire_exercices_du_cours
+# ENTÊTE
+   
+    Projet:  projet_flutter_pour_faire_exercices_du_cours
+    Codeurs: Mathieu Hatin
+    Cours : Apps multi (420-324-AH)
 
-A new Flutter project.
+# LANCER L'APPLICATION
 
-## Getting Started
+    flutter devices 
+        Pour voir les devices disponibles présentement
 
-This project is a starting point for a Flutter application.
+    flutter run -d <nom du device désiré>
 
-A few resources to get you started if this is your first Flutter project:
+    flutter run -d <nom du device désiré> <chemin relatif du .dart à rouler>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+        Par exemple:
+        flutter run -d chrome lib\main_exam1.dart  
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# ÉNONCÉ/DESCRIPTION
+
+    Ce projet sert à rassembler toute les création flutter intéressante faite dans le cours

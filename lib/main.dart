@@ -1,3 +1,5 @@
+// fichier dart auto-généré lors de la création d'un projet flutter par defaut
+
 import 'package:flutter/material.dart';
 
 void main() {

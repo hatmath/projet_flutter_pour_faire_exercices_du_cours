@@ -1,5 +1,5 @@
 
-// ajouter shared_preferences: ^2.0.12 dans pubspec.yaml
+// ajouter shared_preferences: ^2.2.0 dans pubspec.yaml
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 

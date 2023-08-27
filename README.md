@@ -18,4 +18,4 @@
 
 # ÉNONCÉ/DESCRIPTION
 
-    Ce projet sert à rassembler toute les création flutter intéressante faite dans le cours
+    Ce projet sert à rassembler toute les créations flutter pertinentes faite dans le cours

@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -16,11 +18,13 @@ class MyApp extends StatelessWidget {
 class HomeScreen extends StatelessWidget {
   final List<String> items = ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5'];
 
+  HomeScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('List with Hero Transition'),
+        title: const Text('List with Hero Transition'),
       ),
       body: ListView.builder(
         itemCount: items.length,
@@ -41,7 +45,7 @@ class HomeScreen extends StatelessWidget {
                   backgroundColor: Colors.blue,
                   child: Text(
                     '${index + 1}',
-                    style: TextStyle(color: Colors.white),
+                    style: const TextStyle(color: Colors.white),
                   ),
                 ),
               ),
@@ -57,24 +61,24 @@ class HomeScreen extends StatelessWidget {
 class DetailScreen extends StatelessWidget {
   final String item;
 
-  DetailScreen({required this.item});
+  const DetailScreen({super.key, required this.item});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Detail Screen'),
+        title: const Text('Detail Screen'),
       ),
       body: Center(
         child: Hero(
           tag: 'item_$item',
           child: CircleAvatar(
             backgroundColor: Colors.blue,
+            radius: 50,
             child: Text(
               item,
-              style: TextStyle(color: Colors.white),
+              style: const TextStyle(color: Colors.white),
             ),
-            radius: 50,
           ),
         ),
       ),

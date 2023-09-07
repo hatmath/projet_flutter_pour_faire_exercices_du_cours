@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "399288472806",
+    "project_id": "exercices-flutter",
+    "storage_bucket": "exercices-flutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:399288472806:android:d73290a8feb4e5a3831727",
+        "android_client_info": {
+          "package_name": "com.example.projet_flutter_pour_faire_exercices_du_cours"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "399288472806-he6s61kgvvpvcv9cp9c0gecvt34o650f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBExSnv-AYblS2CZ3azZnrn0Ypzruaegg4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "399288472806-he6s61kgvvpvcv9cp9c0gecvt34o650f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

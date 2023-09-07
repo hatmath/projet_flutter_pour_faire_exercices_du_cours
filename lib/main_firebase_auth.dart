@@ -1,4 +1,5 @@
 import "package:firebase_auth/firebase_auth.dart";
+import "package:flutter/foundation.dart";
 import "package:flutter/material.dart";
 import "package:firebase_core/firebase_core.dart";
 
@@ -189,10 +190,37 @@ class _WidgetTreeState extends State<WidgetTree>{
 }
 */
 
-Future<void> main() async{
+// Future<void> main() async{
+//   WidgetsFlutterBinding.ensureInitialized();
+//   await Firebase.initializeApp();
+//   runApp( MyApp());
+// }
+
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
-  runApp( MyApp());
+  
+  if (kIsWeb) {
+    print("Flutter Web");    
+    // Votre logique spécifique pour le Web ici
+    const FirebaseOptions webOption = FirebaseOptions(
+      apiKey: "AIzaSyA4u2Z2oiqbOuyNpYWdWcGSqyNDhuK6xFY",
+      authDomain: "exercices-flutter.firebaseapp.com",
+      projectId: "exercices-flutter",
+      storageBucket: "exercices-flutter.appspot.com",
+      messagingSenderId: "399288472806",
+      appId: "1:399288472806:web:a36ebd644c191217831727",
+      measurementId: "G-N4YWPVQQCJ"
+    );
+    await Firebase.initializeApp(
+      options: webOption,
+    );
+  } else if (defaultTargetPlatform == TargetPlatform.android) {
+    print("Flutter Android");
+    // Votre logique spécifique pour Android ici
+     await Firebase.initializeApp();
+  }
+ 
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget{
@@ -207,3 +235,4 @@ class MyApp extends StatelessWidget{
     );
   }
 }
+

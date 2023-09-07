@@ -45,6 +45,7 @@ class MyHomePageState extends State<MyHomePage> {
     setState(() {
       _savedValue = _textEditingController.text;
     });
+    _textEditingController.text = "";
   }
 
   void _loadSavedValue() async {
@@ -53,6 +54,7 @@ class MyHomePageState extends State<MyHomePage> {
     setState(() {
       _savedValue = savedValue;
     });
+    _textEditingController.text = _savedValue;
   }
 
   @override
@@ -80,7 +82,9 @@ class MyHomePageState extends State<MyHomePage> {
             ElevatedButton(
               onPressed: _loadSavedValue,
               child: const Text('Load Saved Value'),
+
             ),
+            
           ],
         ),
       ),
